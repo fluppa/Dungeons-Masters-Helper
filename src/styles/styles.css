@@ -1,0 +1,1016 @@
+body {
+  margin: 0;
+  height: 2000px;
+  background-color: #121212;
+  scroll-behavior: smooth;
+  color: #F2F2F2;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 0%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+figure {
+  margin: 0;
+}
+
+article {
+  margin: 0;
+  width: 400px;
+}
+
+.backgroundImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/ironCast.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/ironCast.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button {
+  float: left;
+  margin-left: 1vw;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.button * {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+  margin-right: 0px;
+}
+
+.button *:hover {
+  cursor: pointer;
+}
+
+.button:first-child {
+  margin-left: 0px;
+}
+
+.button .top {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#965689), to(#702f42));
+  background-image: linear-gradient(to top, #965689, #702f42);
+}
+
+.button .bottom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#965689), to(#702f42));
+  background-image: linear-gradient(to bottom, #965689, #702f42);
+}
+
+.button:hover .top {
+  opacity: 1;
+}
+
+.top {
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 50px;
+  width: 250px;
+  line-height: 50px;
+  z-index: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.bottom {
+  display: block;
+  position: relative;
+  top: -50px;
+  height: 60px;
+  width: 260px;
+  line-height: 60px;
+  z-index: 0;
+}
+
+.morda {
+  background-image: url(../images/morda.svg);
+  background-repeat: no-repeat;
+  background-size: 3.125vw;
+  margin: 2vw 0 0 4vw;
+  height: 120px;
+  width: 100px;
+}
+
+.checkerboard {
+  position: absolute;
+  background-image: url(../images/checker.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 4vw;
+  bottom: 15px;
+  height: 4.94792vw;
+  width: 4.94792vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .morda {
+    background-size: 6.25vw;
+  }
+  .checkerboard {
+    height: 10.41667vw;
+    width: 10.41667vw;
+  }
+}
+
+nav#mainNav {
+  font-weight: 700;
+  text-align: right;
+  line-height: 3vw;
+  /*.cover{
+        display: inline;
+        background-color: blue;
+        width: 25px;
+        height: pixelToVW(100);
+        position: absolute;
+        right: 4vw;
+        z-index: 0;
+    }*/
+  /*span {
+        transition: right 0.25s linear;
+        position: absolute;
+        z-index: -1;
+        right: 4vw;
+        margin-left: 0.7vw;
+        color: $fontColor;
+        font-size: 1.35em;
+    }*/
+}
+
+nav#mainNav ul {
+  margin-top: 1vw;
+  margin-right: 4vw;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25vw;
+  text-transform: uppercase;
+  color: #818182;
+}
+
+nav#mainNav a {
+  text-decoration: none;
+  color: #818182;
+  position: relative;
+  z-index: 1;
+  /*&:hover + span{
+            right: 2.25vw;
+        }*/
+}
+
+nav#mainNav a:hover {
+  cursor: pointer;
+  color: #F2F2F2;
+}
+
+nav#mainNav a:hover:before {
+  right: -1.8vw;
+}
+
+nav#mainNav a::before {
+  content: "+";
+  -webkit-transition: right 0.25s linear;
+  transition: right 0.25s linear;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  margin-left: 0.7vw;
+  color: #F2F2F2;
+  font-size: 1.35em;
+}
+
+nav#mainNav a::after {
+  content: "";
+  background-color: #121212;
+  width: 30px;
+  height: 5.20833vw;
+  position: absolute;
+  right: 0vw;
+  z-index: -1;
+}
+
+.leftMenu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  margin: 0;
+  position: fixed;
+  z-index: 10;
+  top: 55vh;
+  left: 1.5vw;
+  font-family: "Oswald", sans-serif;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  white-space: nowrap;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.leftMenu::before {
+  content: "\2014  ";
+}
+
+.leftMenu:hover {
+  cursor: pointer;
+  color: #E7623E;
+}
+
+.leftMenu:hover::first-letter {
+  color: #F2F2F2;
+}
+
+.scrollButton {
+  position: absolute;
+  background-image: url("../images/scrollButton.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4.16667vw;
+  height: 4.16667vw;
+  border-radius: 40px;
+  cursor: pointer;
+  bottom: 2vw;
+  left: 47.39583vw;
+}
+
+.hamburgerMenu {
+  display: none;
+  position: fixed;
+  background-image: url("../images/hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  top: 3vw;
+  right: 4vw;
+}
+
+.hamburgerMenu:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #121212;
+  z-index: 11;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay .mordaNav {
+  background-image: url(../images/morda.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 125px;
+  width: 70px;
+  height: 120px;
+}
+
+.overlay ul {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 125px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.overlay .closeBtn {
+  font-size: 4em;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  display: none;
+}
+
+.overlay a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #818182;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25vw;
+  line-height: 70px;
+  z-index: 10;
+}
+
+.overlay a:hover {
+  cursor: pointer;
+  color: #F2F2F2;
+}
+
+.overlay a:hover:before {
+  left: 112%;
+}
+
+.overlay a::before {
+  content: "+";
+  -webkit-transition: left 0.25s linear;
+  transition: left 0.25s linear;
+  position: absolute;
+  z-index: -1;
+  left: 90%;
+  color: #F2F2F2;
+  font-size: 1.35em;
+}
+
+.overlay a::after {
+  content: "";
+  background-color: #121212;
+  width: 31px;
+  height: 5.20833vw;
+  position: absolute;
+  left: 88%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav#mainNav ul {
+    font-size: 1.75em;
+    line-height: 40px;
+  }
+  nav#mainNav a:hover::before {
+    right: -2.75vw;
+  }
+  .overlay a {
+    font-size: 1.75em;
+    line-height: 50px;
+  }
+  .overlay a:hover::before {
+    right: -2vw;
+  }
+  .overlay a::after {
+    width: 20px;
+  }
+  .leftMenu {
+    font-size: 0.88em;
+    left: 1vw;
+  }
+  .scrollButton {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav#mainNav {
+    display: none;
+  }
+  .overlay a::after {
+    height: 50px;
+  }
+  .leftMenu {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+header {
+  margin-left: 4vw;
+  width: 50%;
+  float: left;
+}
+
+header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 11vw;
+  line-height: 92%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header h4 {
+  padding-top: 60px;
+  margin-left: 8px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 14vw;
+  }
+  header h4 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    margin: 0;
+    text-align: center;
+    left: 0;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 13vw;
+  }
+  header h4 {
+    padding-top: 60px;
+    font-size: 1.25em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+}
+
+section.firstArticle {
+  clear: both;
+  margin: 0;
+  font-size: 1.5em;
+  width: 37.76042vw;
+  margin-right: 0;
+  padding-right: 0;
+  position: relative;
+  top: 40vh;
+  right: -50vw;
+  padding-bottom: 400px;
+}
+
+section.firstArticle h2 {
+  color: #E7623E;
+  width: 41.66667vw;
+}
+
+section.firstArticle h4 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+section.firstArticle article {
+  margin-top: 20px;
+  width: 37.76042vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+section.firstArticle li {
+  font-weight: medium;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.65em;
+  margin-bottom: 10px;
+  margin-top: 125px;
+}
+
+section.firstArticle ul {
+  padding: 0;
+  List-style-type: none;
+}
+
+section.firstArticle ol {
+  padding: 0;
+}
+
+section.firstArticle .extra {
+  font-weight: 800;
+  margin-right: 25px;
+}
+
+#subHeader {
+  color: white !important;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.firstArticle {
+    position: static;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55vh;
+  }
+  section.firstArticle h2 {
+    line-height: 80px;
+  }
+  section.firstArticle h4 {
+    margin-top: 40px;
+  }
+  section.firstArticle article {
+    width: 93%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section.firstArticle {
+    position: static;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100vh;
+  }
+  section.firstArticle h2 {
+    line-height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+    width: 90%;
+  }
+  section.firstArticle h4 {
+    margin-top: 40px;
+  }
+  section.firstArticle li {
+    font-size: 1.65em;
+  }
+  section.firstArticle article {
+    font-size: 0.95em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+  }
+}
+
+.decoration {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.characterGallery {
+  position: absolute;
+  top: 130vh;
+  left: 4vw;
+  z-index: 10;
+  padding-bottom: 200px;
+}
+
+.characterGallery .character {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin: 20px 20px 20px 20px;
+  background-color: black;
+  float: left;
+}
+
+.characterGallery .character span {
+  font-family: "Oswald", sans-serif;
+  font-weight: medium;
+  padding: 20px;
+  font-size: 1.75em;
+  position: absolute;
+  bottom: 0px;
+  width: 45%;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.characterGallery .characterImage {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1200px) {
+  .characterGallery {
+    /* position: initial;
+        width: 60%;
+        height: 100px;
+        background-color: red;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        margin-top: -300px;
+        text-align: center;
+        display: none;*/
+    margin-top: -300px;
+    position: initial;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: none;
+  }
+  .characterGallery .character {
+    width: 120px;
+    height: 180px;
+    margin: 10px;
+  }
+  .characterGallery .character span {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .characterGallery .characterImage {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .characterGallery {
+    display: none;
+  }
+}
+
+#fig1 {
+  background-image: url(../images/circle.svg);
+  width: 35px;
+  height: 35px;
+  top: 135vh;
+  left: 10vw;
+}
+
+#fig2 {
+  background-image: url(../images/takeda.svg);
+  width: 20px;
+  height: 20px;
+  top: 160vh;
+  left: 35vw;
+}
+
+#fig3 {
+  background-image: url(../images/snake.svg);
+  width: 35px;
+  height: 35px;
+  top: 180vh;
+  left: 15vw;
+}
+
+#fig4 {
+  background-image: url(../images/cross.svg);
+  background-size: auto;
+  width: 40px;
+  height: 50px;
+  top: 135vh;
+  right: 2vw;
+}
+
+#fig5 {
+  background-image: url(../images/cross.svg);
+  background-size: auto;
+  width: 40px;
+  height: 50px;
+  top: 138vh;
+  right: 2vw;
+}
+
+@media only screen and (max-width: 700px) {
+  .button#main {
+    float: initial;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#main .top {
+    display: none;
+  }
+  .button#main .bottom {
+    width: 200px;
+    font-size: 20px;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.firstArticle#battleplan h2 {
+  color: #965689;
+}
+
+.backgroundImageWrapper#battleplan {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/battleplanBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/battleplanBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button#battleplanDungeon .top {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#715D9C), to(#47327B));
+  background-image: linear-gradient(to top, #715D9C, #47327B);
+}
+
+.button#battleplanDungeon .bottom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#715D9C), to(#47327B));
+  background-image: linear-gradient(to bottom, #715D9C, #47327B);
+}
+
+.button#battleplanOpal {
+  margin-right: 1.5625vw;
+}
+
+.button#battleplanOpal .top {
+  width: 165px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#AB6CAC), to(#954886));
+  background-image: linear-gradient(to top, #AB6CAC, #954886);
+}
+
+.button#battleplanOpal .bottom {
+  width: 175px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#AB6CAC), to(#954886));
+  background-image: linear-gradient(to bottom, #AB6CAC, #954886);
+}
+
+.button#battleplanHelya {
+  float: left;
+  margin-right: 1.5625vw;
+}
+
+.button#battleplanHelya .top {
+  width: 165px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7F513D), to(#6A351E));
+  background-image: linear-gradient(to top, #7F513D, #6A351E);
+}
+
+.button#battleplanHelya .bottom {
+  width: 175px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7F513D), to(#6A351E));
+  background-image: linear-gradient(to bottom, #7F513D, #6A351E);
+}
+
+.button#battleplanIra .top {
+  width: 165px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#E9623E), to(#BE4825));
+  background-image: linear-gradient(to top, #E9623E, #BE4825);
+}
+
+.button#battleplanIra .bottom {
+  width: 175px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E9623E), to(#BE4825));
+  background-image: linear-gradient(to bottom, #E9623E, #BE4825);
+}
+
+@media only screen and (max-width: 700px) {
+  .button#battleplanDungeon {
+    float: initial;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanDungeon .top {
+    display: none;
+  }
+  .button#battleplanDungeon .bottom {
+    width: 200px;
+    font-size: 20px;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanIra {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanIra .top {
+    display: none;
+  }
+  .button#battleplanIra .bottom {
+    width: 140px;
+    font-size: 20px;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanHelya {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanHelya .top {
+    display: none;
+  }
+  .button#battleplanHelya .bottom {
+    width: 140px;
+    font-size: 20px;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanOpal {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button#battleplanOpal .top {
+    display: none;
+  }
+  .button#battleplanOpal .bottom {
+    width: 140px;
+    font-size: 20px;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #btnWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px;
+  }
+}
+
+section.firstArticle#shopkeep h2 {
+  color: #007F7F;
+}
+
+.backgroundImageWrapper#shopkeep {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/shopkeepBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/shopkeepBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.characterGallery#shopkeep .character {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(70%, #007F7F), to(#2c2c2c));
+  background: linear-gradient(to bottom, transparent 30%, #007F7F 70%, #2c2c2c 100%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .characterGallery#shopkeep {
+    margin-top: -500px;
+  }
+}
+
+.firstArticle#dungeons h2 {
+  color: #714D9C;
+}
+
+.backgroundImageWrapper#dungeons {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/dungeonsBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/dungeonsBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.characterGallery#dungeons .character {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(70%, #714D9C), to(#2c2c2c));
+  background: linear-gradient(to bottom, transparent 30%, #714D9C 70%, #2c2c2c 100%);
+}
+
+#figroup2 {
+  background-image: url(../images/Group91.svg);
+  opacity: 0.5;
+  top: 1380px;
+  left: -200px;
+  width: 3000px;
+  height: 3000px;
+}
+
+#dungeonMorda {
+  float: left;
+  position: absolute;
+  margin-top: 125px;
+  left: -100px;
+  background-image: url(../images/morda2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+}
+
+section.firstArticle#locations h2 {
+  color: #4F7F63;
+}
+
+.backgroundImageWrapper#locations {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/locationsBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/locationsBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#map {
+  background-image: url(../images/mapa.png);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 1480px;
+  left: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #map {
+    display: none;
+  }
+}
+
+.firstArticle#factions h2 {
+  color: #BA3E7A;
+}
+
+.backgroundImageWrapper#factions {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/factionsBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/factionsBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.characterGallery#factions .character {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(70%, #BA3E7A), to(#2c2c2c));
+  background: linear-gradient(to bottom, transparent 30%, #BA3E7A 70%, #2c2c2c 100%);
+}
+
+.firstArticle#bestiary h2 {
+  color: #CA2C32;
+}
+
+.backgroundImageWrapper#bestiary {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/bestiaryBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/bestiaryBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#figroup1 {
+  background-image: url(../images/Group90.svg);
+  top: 1280px;
+  left: 200px;
+  width: 500px;
+  height: 500px;
+}
+
+.firstArticle#bestiary {
+  padding-bottom: 800px;
+}
+
+.firstArticle#dieties h2 {
+  color: #F7B900;
+}
+
+.backgroundImageWrapper#dieties {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(#121212)), url(../images/dietiesBackground.png);
+  background: linear-gradient(to bottom, transparent 0%, transparent 70%, #121212 100%), url(../images/dietiesBackground.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.firstArticle#dieties {
+  padding-bottom: 800px;
+}
+/*# sourceMappingURL=styles.css.map */

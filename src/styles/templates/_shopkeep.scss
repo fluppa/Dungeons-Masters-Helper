@@ -1,0 +1,24 @@
+section.firstArticle#shopkeep{
+    h2{
+        color: #007F7F;
+        
+    }
+}
+
+.backgroundImageWrapper#shopkeep{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/shopkeepBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.characterGallery#shopkeep .character{
+    background: linear-gradient(to bottom, transparent 30%, #007F7F 70%,#2c2c2c 100%);
+}
+
+@media only screen and (max-width: 1200px){
+    .characterGallery#shopkeep{
+        margin-top: -500px;
+
+    }
+}

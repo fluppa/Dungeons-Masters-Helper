@@ -1,0 +1,85 @@
+.characterGallery{
+    position: absolute;
+    top: 130vh;
+    left: 4vw;
+    z-index: 10;
+    padding-bottom: 200px;
+
+    .character{
+   
+        position: relative;
+        width: 200px;
+        height: 300px;
+        margin: 20px 20px 20px 20px;
+        background-color: black;
+        float: left;
+    
+        span{
+            font-family: $oswald;
+            font-weight: medium;
+            padding: 20px;
+            font-size: 1.75em;
+            position: absolute;
+            bottom: 0px;
+            width: 45%;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .characterImage{
+        width: 200px;
+        height: 300px;
+        position:absolute;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .characterGallery{
+       
+       /* position: initial;
+        width: 60%;
+        height: 100px;
+        background-color: red;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        margin-top: -300px;
+        text-align: center;
+        display: none;*/
+        margin-top: -300px;
+        position: initial;
+        margin-right: auto;
+        margin-left: auto;
+        width: 800px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .character{
+            //text-align: center;
+            width: 120px;
+            height: 180px;
+            margin: 10px;
+            span{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+        .characterImage{
+            width: 120px;
+            height: 180px;
+            //background-color: blue;
+        }
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 700px){
+    .characterGallery{
+        display: none;
+    }
+}

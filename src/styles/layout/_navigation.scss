@@ -1,0 +1,261 @@
+nav#mainNav{  
+    font-weight: 700;
+    text-align: right;
+    line-height: 3vw;
+    
+    ul{
+        margin-top: 1vw;
+        margin-right: 4vw;
+        list-style-type: none;
+        font-family: $oswald;
+        //font-family: $montserrat;
+        //font-weight: 300;
+        font-size: 2.25vw;
+        text-transform: uppercase;
+        color: $inactiveLink; 
+    }
+    a{
+        //background-color: $backgroundColor;
+        text-decoration: none;
+        color: $inactiveLink;
+        position: relative;
+        z-index: 1;
+        &:hover{
+            cursor: pointer;
+            color: $fontColor;
+        }
+        /*&:hover + span{
+            right: 2.25vw;
+        }*/
+
+        &:hover:before{
+            right: -1.8vw;
+        }
+        
+        &::before{
+            content: "+";
+            transition: right 0.25s linear;
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            margin-left: 0.7vw;
+            color: $fontColor;
+            font-size: 1.35em;
+        }
+
+        &::after{
+            content: "";
+            background-color: $backgroundColor;
+            width: 30px;
+            height: pixelToVW(100);
+            position: absolute;
+            right: 0vw;
+            z-index: -1; 
+        }
+
+    }
+    /*.cover{
+        display: inline;
+        background-color: blue;
+        width: 25px;
+        height: pixelToVW(100);
+        position: absolute;
+        right: 4vw;
+        z-index: 0;
+    }*/
+
+    /*span {
+        transition: right 0.25s linear;
+        position: absolute;
+        z-index: -1;
+        right: 4vw;
+        margin-left: 0.7vw;
+        color: $fontColor;
+        font-size: 1.35em;
+    }*/
+}
+
+.leftMenu{
+    user-select: none;
+    display: block;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    top: 55vh;
+    left: 1.5vw;
+    font-family: $oswald;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    transform: rotate(180deg);
+    &::before{
+        content: "\2014  ";
+    }
+    &:hover{
+        cursor: pointer;
+        color: $barbarian;
+        &::first-letter{
+            color:$fontColor;
+        }
+    }
+}
+
+.scrollButton{
+    position: absolute;
+    background-image: url("../images/scrollButton.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: pixelToVW(80);
+    height: pixelToVW(80);
+    border-radius: 40px;
+    cursor: pointer;
+    bottom: 2vw;
+    left:50vw - pixelToVW(50);   
+}
+
+.hamburgerMenu{
+    display: none;
+    position: fixed;
+    background-image: url("../images/hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    top:3vw;
+    right: 4vw;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #121212;
+    z-index: 11;
+    overflow: hidden;
+    transition: 0.5s;
+    .mordaNav{
+        background-image: url(../images/morda.svg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 125px;
+        width: 70px;
+        height: 120px;
+    }
+    ul{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 125px;
+        margin:0;
+        padding:0;
+        text-align: center;
+        list-style-type:none;
+        
+    }
+    .closeBtn{
+        font-size: 4em;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        display:none;
+    }
+    a{
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        color: $inactiveLink;
+        font-family: $oswald;
+        font-size: 2.25vw;
+        line-height: 70px;
+        z-index: 10;
+        &:hover{
+            cursor: pointer;
+            color: $fontColor;
+        }
+        &:hover:before{
+            left:112%;
+        }
+        
+        &::before{
+            content: "+";
+            transition: left 0.25s linear;
+            position: absolute;
+            z-index: -1;
+            left:90%;
+            color: $fontColor;
+            font-size: 1.35em;
+        }
+
+        &::after{
+            content: "";
+            background-color: $backgroundColor;
+            width: 31px;
+            height: pixelToVW(100);
+            position: absolute;
+            left:88%;
+            z-index: -1; 
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    nav#mainNav{
+       ul{
+           font-size: 1.75em;
+           line-height: 40px;
+       }
+       a:hover::before{
+        right: -2.75vw;
+       }
+    }
+    .overlay{
+        a{
+            font-size: 1.75em;
+            line-height: 50px;
+        }
+        a:hover::before{
+         right: -2vw;
+        }
+        a::after{
+            width: 20px;
+        }
+    }
+
+    .leftMenu{
+        font-size: 0.88em;
+        left: 1vw;
+    }
+    .scrollButton{
+        display: none;
+    }
+
+}
+  
+@media only screen and (max-width: 700px){
+    nav#mainNav{
+        display:none;
+    }
+    .overlay{
+        a::after{
+            height: 50px;
+        }
+        //.closeBtn{
+            //display:inline-block;
+       // }
+    }
+    .leftMenu{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+}

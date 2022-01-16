@@ -1,0 +1,17 @@
+.firstArticle#dieties{
+    h2{
+        color: #F7B900;
+    }
+}
+
+.backgroundImageWrapper#dieties{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/dietiesBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.firstArticle#dieties{
+    padding-bottom: 800px;
+}

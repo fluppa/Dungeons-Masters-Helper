@@ -1,0 +1,27 @@
+section.firstArticle#locations{
+    h2{
+        color: #4F7F63;
+    }
+}
+
+.backgroundImageWrapper#locations{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/locationsBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#map{
+    background-image: url(../images/mapa.png);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 1480px;
+    left:200px;
+}
+
+@media only screen and (max-width: 1200px){
+    #map{
+        display: none;
+    }
+}

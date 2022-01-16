@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons Master's Helper</title>
+</head>
+<body>
+    <nav class="overlay" id="overlayNav" onclick="closeNavAlt()">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <figure class="mordaNav"></figure>
+        <ul id="test">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="battleplan.html">Battleplan</a></div></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="dungeons.html">Dungeons</a></li>
+            <li><a href="shopkeep.html">Shopkeep</a></li>
+            <li><a href="factions.html">Factions</a></li>
+            <li><a href="bestiary.html">Bestiary</a></li>
+            <li><a href="dieties.html">Dieties</a></li>
+        </ul>
+    </nav>
+    <div class="backgroundImageWrapper"></div>
+    <section class="scrollButton" onclick="window.scrollTo({ top: 1080, behavior: 'smooth' })"></section>
+    <section class="leftMenu" onclick="openNav()">00. Introduction</section>
+    <section class="hamburgerMenu" onclick="openNav()"></section>
+    <figure class="morda"></figure>
+    <header>
+        <h1>Dungeon Master's Helper</h1>
+        <h4>A visually pleasing step by step battleplan complete with monster stat blocks, items, quests and dungeons for the Isles of Kronis</h4>
+    </header>
+    <nav id="mainNav">
+       <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="battleplan.html">Battleplan</a></div></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="dungeons.html">Dungeons</a></li>
+            <li><a href="shopkeep.html">Shopkeep</a></li>
+            <li><a href="factions.html">Factions</a></li>
+            <li><a href="bestiary.html">Bestiary</a></li>
+            <li><a href="dieties.html">Dieties</a></li>
+        </ul>
+    </nav>
+    <figure class="checkerboard"></figure>
+    <section class="firstArticle">
+        <h2>Introduction Speech</h2>
+        <h4>How the journey starts</h4>
+        <article>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magna.</article>
+        <div class="button" id="main">
+            <a class="top" href="https://www.youtube.com/watch?v=gG_dA32oH44" target="_blank">Battleplan</a>
+            <a class="bottom" href="https://www.youtube.com/watch?v=gG_dA32oH44" target="_blank">Battleplan</a>
+        </div>
+    </section>
+    <figure class="decoration" id="fig1"></figure>
+    <figure class="decoration" id="fig2"></figure>
+    <figure class="decoration" id="fig3"></figure>
+    <figure class="decoration" id="fig4"></figure>
+    <figure class="decoration" id="fig5"></figure>
+    <script>
+        function openNav(){
+            document.getElementById("overlayNav").style.height = "100%";
+            document.body.style.overflow="hidden";
+        }
+        function closeNav(){
+            document.getElementById("overlayNav").style.height = "0%";
+            document.body.style.overflow="auto";
+        }
+        function closeNavAlt(){
+            if(event.target.id!="test"){
+                closeNav();
+            }   
+        }
+    </script>
+</body>
+</html>

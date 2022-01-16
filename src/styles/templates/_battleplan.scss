@@ -1,0 +1,137 @@
+.firstArticle#battleplan{
+    h2{
+        color: #965689;
+    }
+}
+
+.backgroundImageWrapper#battleplan{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/battleplanBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button#battleplanDungeon{
+        & .top{
+            background-image:  linear-gradient(to top,#715D9C, #47327B);
+        }
+    
+        & .bottom{
+           
+            background-image:  linear-gradient(to bottom,#715D9C, #47327B);
+        }
+}
+
+.button#battleplanOpal{
+
+    
+    margin-right: pixelToVW(30);
+    & .top{
+        width: 165px;
+        background-image:  linear-gradient(to top,#AB6CAC, #954886);
+    }
+
+    & .bottom{
+        width: 175px;
+        background-image:  linear-gradient(to bottom,#AB6CAC, #954886);
+    }
+
+
+}
+
+.button#battleplanHelya{
+    float: left;
+    margin-right: pixelToVW(30);
+    & .top{
+        width: 165px;
+        background-image:  linear-gradient(to top,#7F513D, #6A351E);
+    }
+
+    & .bottom{
+        width: 175px;
+        background-image:  linear-gradient(to bottom,#7F513D, #6A351E);
+    }
+}
+
+.button#battleplanIra{
+    & .top{
+        width: 165px;
+        background-image:  linear-gradient(to top,#E9623E, #BE4825);
+    }
+
+    & .bottom{
+        width: 175px;
+        background-image:  linear-gradient(to bottom,#E9623E, #BE4825);
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .button#battleplanDungeon{
+        float: initial;
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        & .top{
+            display: none;
+        }
+       & .bottom{ 
+            width: 200px;
+            font-size: 20px;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+       }
+       
+    }
+    .button#battleplanIra{
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        & .top{
+            display: none;
+        }
+       & .bottom{ 
+            width: 140px;
+            font-size: 20px;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+       }
+    }
+    .button#battleplanHelya{
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        & .top{
+            display: none;
+        }
+       & .bottom{ 
+            width: 140px;
+            font-size: 20px;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+       }
+    }
+    .button#battleplanOpal{
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        & .top{
+            display: none;
+        }
+       & .bottom{ 
+            width: 140px;
+            font-size: 20px;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+       }
+    }
+    
+    #btnWrapper{
+        display: flex;
+        justify-content: center;
+        padding:30px;
+    }
+}

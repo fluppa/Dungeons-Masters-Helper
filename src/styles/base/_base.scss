@@ -1,0 +1,131 @@
+$btnHeight: 50px;
+$btnWidth: 250px;
+$borderSize: 5px;
+$buttonSpacing: 1vw;
+$animationTime: 0.5s;
+$opalGradient: #954886, #ab6cac;
+
+body{
+    margin: 0;
+    height: 2000px;
+    background-color: $backgroundColor;
+    scroll-behavior: smooth;
+    color: $fontColor;
+}
+
+h1{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    padding-top: 0%;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 3.5em;
+}
+
+h3{
+    font-family: $oswald;
+    font-weight: normal;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+h4{
+    
+    margin: 0;
+    
+    font-family: $montserrat;
+    font-weight: 500;
+}
+
+figure{
+    margin: 0;
+}
+
+article{
+    margin: 0;
+    width: 400px;
+   
+}
+
+.backgroundImageWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+   //background-image: url(ironCast.png);
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/ironCast.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button{
+    float: left;
+    
+    margin-left: $buttonSpacing;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    *{
+        font-family: 'Montserrat', sans-serif;
+        user-select: none;   
+        cursor: default;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        margin-right: 0px;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &:first-child{
+        margin-left: 0px; 
+    }
+
+    & .top{
+        background-image:  linear-gradient(to top,#965689, #702f42);
+    }
+
+    & .bottom{
+        
+        background-image:  linear-gradient(to bottom,#965689, #702f42);
+    }
+
+    &:hover .top{
+        opacity: 1;
+    }
+}
+
+.top{
+    display: block;
+    position: relative;
+    top:$borderSize;
+    left:$borderSize;
+    height: $btnHeight;
+    width: $btnWidth;
+    line-height: $btnHeight;
+    z-index: 1;
+    transition: opacity $animationTime ease-in-out;
+    opacity: 0;
+}
+
+.bottom{
+    
+    display: block;
+    position: relative;
+    top: -$btnHeight;
+    height: $btnHeight + $borderSize*2;
+    width: $btnWidth + $borderSize*2;
+    line-height: $btnHeight + $borderSize*2;
+    z-index: 0; 
+}

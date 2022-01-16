@@ -1,0 +1,15 @@
+<svg id="Scroll_Button" data-name="Scroll Button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <filter id="Union_10" x="11.137" y="5.354" width="57.727" height="69.289" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_30" data-name="Ellipse 30" cx="40" cy="40" r="40" fill="#aaa" fill-opacity="0.3"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Union_10)">
+    <path id="Union_10-2" data-name="Union 10" d="M10191.867,22126.063v-11.551a13.863,13.863,0,1,1,27.727,0v11.551a13.863,13.863,0,1,1-27.727,0Zm2.312-11.551v11.551a11.554,11.554,0,1,0,23.108,0v-11.551a11.554,11.554,0,1,0-23.108,0Zm2.306,11.551a1.156,1.156,0,0,1,2.312,0,6.941,6.941,0,0,0,6.935,6.934,1.156,1.156,0,0,1,0,2.313A9.257,9.257,0,0,1,10196.484,22126.063Zm5.778-11.551v-4.623a3.467,3.467,0,1,1,6.935,0v4.623a3.467,3.467,0,0,1-6.935,0Zm2.312-4.623v4.623a1.156,1.156,0,0,0,2.312,0v-4.623a1.156,1.156,0,1,0-2.312,0Z" transform="translate(-10165.73 -22080.29)" fill="#f2f2f2"/>
+  </g>
+</svg>

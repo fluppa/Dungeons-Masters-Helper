@@ -1,0 +1,32 @@
+.morda{
+    background-image: url(../images/morda.svg);
+    background-repeat: no-repeat;
+    background-size: pixelToVW(60);
+    margin: 2vw 0 0 4vw;
+    height: 120px;
+    width: 100px;
+}
+
+.checkerboard{
+    position: absolute;
+    background-image: url(../images/checker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 4vw;
+    bottom: 15px;
+    height: pixelToVW(95);
+    width: pixelToVW(95);
+}
+
+@media only screen and (max-width: 1200px){
+    .morda{
+        background-size: pixelToVW(120);
+    }
+    .checkerboard{
+        height: pixelToVW(200);
+        width: pixelToVW(200);
+    }
+}
+  
+@media only screen and (max-width: 700px){
+}

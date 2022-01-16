@@ -1,0 +1,40 @@
+.firstArticle#dungeons{
+    h2{
+        color: #714D9C;
+    }
+}
+
+.backgroundImageWrapper#dungeons{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/dungeonsBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.characterGallery#dungeons .character{
+    background: linear-gradient(to bottom, transparent 30%, #714D9C 70%, #2c2c2c 100%);
+}
+
+#figroup2{
+    background-image: url(../images/Group91.svg);
+    opacity: 0.5;
+    top: 1380px;
+    left: -200px;
+    width: 3000px;
+    height: 3000px;
+}
+
+#dungeonMorda{
+    float:left;
+    position: absolute;
+    margin-top:125px;
+    left: -100px;
+    
+    
+    background-image: url(../images/morda2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+

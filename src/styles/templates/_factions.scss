@@ -1,0 +1,16 @@
+.firstArticle#factions{
+    h2{
+        color: #BA3E7A;
+    }
+}
+
+.backgroundImageWrapper#factions{
+    background: linear-gradient(to bottom, transparent 0%,transparent 70%, $backgroundColor 100%),url(../images/factionsBackground.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.characterGallery#factions .character{
+    background: linear-gradient(to bottom, transparent 30%, #BA3E7A 70%,#2c2c2c 100%);
+}

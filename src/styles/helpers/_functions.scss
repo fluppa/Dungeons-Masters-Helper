@@ -1,0 +1,7 @@
+@function pixelToVW($pixel){
+    @return $pixel/1920*100vw;
+}
+
+@function pixelToVH($pixel){
+    @return $pixel/1080*1vh;
+}

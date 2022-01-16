@@ -1,0 +1,110 @@
+section.firstArticle{
+    clear:both;
+    margin: 0;
+    font-size: 1.5em;
+    width: pixelToVW(725);
+    margin-right: 0;
+    padding-right: 0;
+    position: relative;
+    top: 40vh;
+    //margin-right: 50vw;
+    right: -50vw;
+   
+    padding-bottom: 400px;
+
+    h2{
+        color:$barbarian;
+        width: pixelToVW(800);
+    }
+    h4{
+        margin-top: 0px;
+        font-weight: 300;
+    }
+    article{
+        margin-top: 20px;
+        width: pixelToVW(725);
+        font-family:$montserrat;
+        font-weight: 300;
+        
+
+    }
+    li{
+        font-weight: medium;
+        font-family: $montserrat;
+        font-size: 1.65em;
+        margin-bottom: 10px;
+        margin-top:125px;
+        
+    }
+    ul{
+        padding: 0;
+        List-style-type: none;
+       
+    }
+    ol{
+        padding: 0;
+    }
+
+    .extra{
+        font-weight: 800;
+        margin-right: 25px;
+    }
+}
+
+#subHeader{
+    color:white !important;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px){
+    section.firstArticle{
+        position: static;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55vh;
+        h2{
+            line-height: 80px;
+        }
+        h4{
+            margin-top: 40px;
+        }
+        article{
+
+            width: 93%;
+        }
+
+    }
+
+}
+  
+@media only screen and (max-width: 700px){
+    section.firstArticle{
+        position: static;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100vh;
+        h2{
+            line-height: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2.5em;
+            width: 90%;
+        }
+        h4{
+           
+            margin-top: 40px;
+        }
+        li{
+            font-size: 1.65em;
+        }
+        article{
+            font-size: 0.95em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 93%;
+        }
+    }
+}
